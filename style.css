@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dad0d0;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: white;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 36%;
+  width: 100%;
+  border-radius:  24px 24px 0px 0px;
+  background-color: #4070f4;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(192, 35, 35);
+  border-radius: 50%;
+  background-color: #094bff;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.image .profile-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+  margin-top: 14px;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-data .job {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.profile-card .media-button {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-button .link {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background-color: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+.profile-card .button {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.button .btn {
+  background-color: #4070f4;
+  padding: 8px 24px;
+  margin: 0 10px;
+  border-radius: 24px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button .btn:hover {
+  background-color: #4069b9;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analytics .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  color: #333;
+  border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+  font-size: 18px;
+  margin: 6px;
+}
+
+.data  :last-child {
+  border-right: none;
+}
